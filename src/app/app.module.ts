@@ -2,19 +2,29 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { routing, appRoutingProviders } from './app.routing';
 
-import { AppComponent } from './app.component';
+import { HeadBarComponent } from './components/shared/head-bar/head-bar.component';
+import { HomeComponent } from './components/home/home.component';
+import { CourseDetailsComponent } from './components/course-details/course-details.component';
+import { ListCourseComponent } from './components/list-course/list-course.component';
+import { HomePage } from './pages/home-page/home-page';
 
 @NgModule({
   declarations: [
-    AppComponent
+    HeadBarComponent,
+    HomeComponent,
+    CourseDetailsComponent,
+    ListCourseComponent,
+    HomePage
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [HomePage]
 })
 export class AppModule { }

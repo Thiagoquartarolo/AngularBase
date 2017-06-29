@@ -38,7 +38,14 @@ npm install -g angular-cli
 ng new NomeApp
 
 ng generate NomeClass <- gera classe
-ng serve <- start aplicação(compila aplicação)-->
 
+ng generate component NomeComponent <- gera component
+
+ng generate service NomeService <- gera service
+
+ng serve <- start aplicação(compila aplicação)
+
+ng build  <- cria pasta Dist p debloy
+-->
 
 
